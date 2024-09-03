@@ -3,7 +3,7 @@ for (let key in person) {
   console.log(`${key}-Nombre: ${person[key].nombre} \n  Altura: ${person[key].altura} \n  Edad: ${person[key].edad}`);
 }
 
-// Filtrar informacion de persona que contengan datos similares METODO(filter)
+// Filtrar informacion de persona que contengan datos similares METODO(filter).
 // Estructura nombreArray/metodo filter()/ parametro/ arrowFunction/ parametro + clave/ valor
 let info = person.filter(item => item.comidaFav == 'sushi');
 console.log(info)
