@@ -61,7 +61,7 @@ let person = [
     peso: 70 + ' KG'
   },
   // {
-  //   'autor': 'Charles R. Swindoll',
+  //   'autor': 'Charles R. Swindoll.',
   //   'texto': 'La vida es 10% lo que te ocurre y 90% cómo reaccionas.'
   // },
   // {
