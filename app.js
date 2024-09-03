@@ -419,7 +419,7 @@ console.log(post.some(post => post.id === 5));
 /* el metodo includes sirve para verificar si existe
 dentro de un array cierta palabra*/
 console.log(post.some(post => post.tags.includes('react')));
-/* el metodo every no solo comprueba si hay alguno si no que tambien
+/* el metodo every no solo comprueba si hay alguno si no que tambien.
 verifica si se cumple en todo*/
 console.log(post.every(post => post.tags.includes('react')));
 /*Metodo map
