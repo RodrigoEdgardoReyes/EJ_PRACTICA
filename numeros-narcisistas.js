@@ -19,39 +19,55 @@
  **/
 
 function numNarcisista(num) {
-    // Pedir al usuario que ingrese un numero
-    num = prompt('Ingrese un numero');
+  // Pedir al usuario que ingrese un numero
+  num = prompt('Ingrese un numero');
 
-    // muestro en consola el numero ingresado por el usuario
-    console.log(num)
+  // muestro en consola el numero ingresado por el usuario
+  console.log(`Numero entero:  ${num} `)
 
-    // convertir el numero a cadena
-    numCadena = num.toString();
+  // convertir el numero a cadena
+  // Lo usare para comparar el resultado final
+  numCadena = num.toString();
 
-    // Contar el numero de digitos del numero entero ingresado por el usuario
-    num_digitos = numCadena.length;
+  /** 
+   * Contar el numero de digitos del numero entero ingresado por el user
+   * Lo usare para multiplicar cada digito por el total de digitos del 
+   * numero entero 
+  **/
+  num_digitos = numCadena.length;
 
-    // muestro por consola el numero de digitos
-    console.log(num_digitos)
+  // muestro por consola el numero de digitos
+  console.log(`Numero de digitos: ${num_digitos}`)
 
-    // Diccionario para obtener los digitos por separado
-    digitos = {}
+  // Diccionario para obtener los digitos por separado
+  digitos = {}
+  let resultado = 0;
+  total = 0;
+  
+  for (let i = 0; i < num_digitos; i++) {
+    let digito = parseInt(num[i] ** num_digitos)
+    console.log('digito: ' + digito)
+    digitos[i] = digito;
+  }
 
-    // Itero sobre cada caracter 
-    for (let i = 0; i < num_digitos; i++) {
-        let digito = num[i]
-        digitos[i] = digito;
-    }
+  /**  
+   * Muestro los digitos por separado
+   * En esta parte manejare la logica de multiplicar cada digito
+   * por el total de los digitos del numero entero
+  **/
+  console.log("Los dígitos separados son:");
+  for (let posicion in digitos) {
+    console.log(posicion + ": " + digitos[posicion]);
 
-    console.log(digitos)
+    // Almaceno y sumo cada numero iterado dando como resultado el total de la suma de ellos
+    resultado += digitos[posicion]
+  }
 
-    // Muestro los digitos por separado
-    console.log("Los dígitos separados son:");
-    for (let posicion in digitos) {
-        console.log(posicion + ": " + digitos[posicion]);
-    }
-
-    // FALTAAAA XD
+  if (resultado == numCadena) {
+    console.log('true ' + 'Entero: ' + num + ' ' + 'Resultado: ' + resultado)
+  } else {
+    console.log('false ' + 'Entero: ' + num + ' ' + 'Resultado: ' + resultado)
+  }
 
 }
 
