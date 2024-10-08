@@ -78,7 +78,7 @@
 //     }
 // }
 
-// // Función para imprimir la información de una persona por país
+// // Función para imprimir la información de una persona por país.
 // function imprimirPorPais(pais) {
 //     console.log(`Información de personas de ${pais}:`);
 //     for (let persona of personas) {
