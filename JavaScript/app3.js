@@ -8,7 +8,7 @@ for (let key in person) {
 let info = person.filter(item => item.comidaFav == 'sushi');
 console.log(info)
 
-// Buscar un elemento que contenga algo especifco METODO(find) y muestra al primero que encuentre 
+// Buscar un elemento que contenga algo especifco METODO(find) y muestra al primero que encuentre.
 // Estructura nombreArray/metodo find()/ parametro/ arrowFunction/ parametro + clave/ valor
 console.log(person.find(p => p.apellido == 'Roust'))
 
